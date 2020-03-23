@@ -2693,7 +2693,7 @@ img.mfp-img {
 
 main {
   position: relative;
-  z-index: 100; }
+  z-index: 90; }
 
 .c-accentbox {
   overflow: hidden;
