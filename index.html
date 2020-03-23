@@ -34,7 +34,9 @@
 
 
   <body>
-    <header role="banner" class="o-header">
+    <div id="stars"></div>
+<div id="stars2"></div>
+<header role="banner" class="o-header">
     <div class="o-header__container c-spotlightbox">
       <div class="o-constrained">
         <div class="o-header__top js-header">
@@ -71,7 +73,7 @@
         <div class="o-constrained">
           <div class="o-header__body">
             <div class="o-header__content">
-              <h1 class="a-title"><strong>Reactive ÐApp Development</strong></h1>
+              <h1 class="a-title"><strong>Reactive Ðpp Development</strong></h1>
               <p class="u-text-color-quiet u-text-l">A powerful tool for building dApps in your favorite framework</p>
               <div class="o-actionbar o-center">
                 <div class="o-actionbar__item">
@@ -225,7 +227,7 @@ subspace.trackBalance(address, "0x744d70fdbe2ba4cf95131626614a1763df805b9e").sub
 
           <span class="u-text-strong">View details</span>
         </a>
-        <pre><code class="language-javascript"><script type="text/plain" class="">import { observe } from "@embarklabs/subspace-react";
+        <pre><code class="language-javascript"><script type="text/plain" class="">import { observe } from "@embarklabs/subspace/react";
 
 const ProductComponent = ({ maxRating, minRating, averageRating }) => {
   return <ul>
