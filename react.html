@@ -54,14 +54,15 @@
                 class="o-navigation__item ">
                 Getting started
               </a>
-              <a href="/integrations-overview.html" title="Getting started"
-                class="o-navigation__item ">
-                Integrations
-              </a>
-              <a href="/api.html" title="Getting started"
+              <a href="/api.html" title="API"
                 class="o-navigation__item ">
                 API
               </a>
+              <a href="https://github.com/embarklabs/subspace" title="Github"
+                class="o-navigation__item">
+                Github
+              </a>
+              
             </div>
           </nav>
         </div>
@@ -256,7 +257,7 @@
 
 
 
-<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><h4 id="SubspaceProvider"><a href="#SubspaceProvider" class="headerlink" title="SubspaceProvider"></a>SubspaceProvider</h4><p>To use most of the <code>subspace-react</code> components, you need to wrap your app with the <code>&lt;SubspaceProvider web3={web3} /&gt;</code> component. This will make Subspace available to any nested components that accesses it via the <code>useSubspace</code> hook or has been wrapped in the <code>withSubspace</code> higher order component. Any React component might use Subspace so it makes sense to add the provider near the top level of your dApp. The <code>SubspaceProvider</code> requires a web3 object</p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><h4 id="SubspaceProvider"><a href="#SubspaceProvider" class="headerlink" title="SubspaceProvider"></a>SubspaceProvider</h4><p>To use most of the <code>subspace-react</code> components, you need to wrap your app with the <code>&lt;SubspaceProvider web3={web3} /&gt;</code> component. This will make Subspace available to any nested components that accesses it via the <code>useSubspace</code> hook or has been wrapped in the <code>withSubspace</code> higher order component. Any React component might use Subspace so it makes sense to add the provider near the top level of your dApp. The <code>SubspaceProvider</code> requires a web3 object and can receive an <code>options</code> object to initialize Subspace (optional).</p>
 
 <!-- Has Prism -->
 <pre class="line-numbers" style="" ><code class="language-js">&#x2F;&#x2F; index.js
@@ -269,7 +270,7 @@ const web3 = new Web3(&quot;ws:&#x2F;&#x2F;localhost:8545&quot;);
 
 const rootElement = document.getElementById(&#39;root&#39;)
 ReactDOM.render(
-  &lt;SubspaceProvider web3={web3}&gt;
+  &lt;SubspaceProvider web3={web3} options={options}&gt;
     &lt;MyApp &#x2F;&gt;
   &lt;&#x2F;SubspaceProvider&gt;,
   rootElement

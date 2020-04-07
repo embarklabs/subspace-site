@@ -54,14 +54,15 @@
                 class="o-navigation__item is-active">
                 Getting started
               </a>
-              <a href="/integrations-overview.html" title="Getting started"
-                class="o-navigation__item ">
-                Integrations
-              </a>
-              <a href="/api.html" title="Getting started"
+              <a href="/api.html" title="API"
                 class="o-navigation__item ">
                 API
               </a>
+              <a href="https://github.com/embarklabs/subspace" title="Github"
+                class="o-navigation__item">
+                Github
+              </a>
+              
             </div>
           </nav>
         </div>
@@ -251,13 +252,17 @@
 
 <!-- Has Prism -->
 <pre class="line-numbers" style="" ><code class="language-bash"># Using npm
-npm install --save @embarklabs&#x2F;subspace
+npm install --save @embarklabs&#x2F;subspace web3 rxjs
 
 # Using yarn
-yarn add @embarklabs&#x2F;subspace 
+yarn add @embarklabs&#x2F;subspace  web3 rxjs
 </code></pre>
 
 
+
+<div class="c-notification">
+Notice that we also include <code>web3</code> and <code>rxjs</code>. These are required peer dependencies
+</div>
 
 <h2 id="Importing-the-library"><a href="#Importing-the-library" class="headerlink" title="Importing the library"></a>Importing the library</h2>
 <!-- Has Prism -->

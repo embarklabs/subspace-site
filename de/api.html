@@ -54,14 +54,15 @@
                 class="o-navigation__item ">
                 Getting started
               </a>
-              <a href="/de/integrations-overview.html" title="Getting started"
-                class="o-navigation__item ">
-                Integrations
-              </a>
-              <a href="/de/api.html" title="Getting started"
+              <a href="/de/api.html" title="API"
                 class="o-navigation__item ">
                 API
               </a>
+              <a href="https://github.com/embarklabs/subspace" title="Github"
+                class="o-navigation__item">
+                Github
+              </a>
+              
             </div>
           </nav>
         </div>
@@ -272,6 +273,7 @@
 <li><code>fromBlock</code> - <code>Number</code> (optional): The block number from which to get events on.</li>
 <li><code>toBlock</code> - <code>Number</code> (optional): The block number to get events up to (Defaults to <code>&quot;latest&quot;</code>)</li>
 <li><code>topics</code> - <code>Array</code> (optional): This allows you to manually set the topics for the event filter. If given the filter property and event signature, (<code>topic[0]</code>) will not be set automatically.</li>
+<li><code>saveToDb</code> - <code>Boolean</code> (optional): Store events into a local database for faster data retrievals.  (default: <code>true</code>)</li>
 </ul>
 </li>
 </ol>
@@ -312,7 +314,8 @@
 <li><code>filter</code> - <code>Object</code> (optional): Lets you filter events by indexed parameters, e.g. <code>{filter: {myNumber: [12,13]}}</code> means all events where <code>&quot;myNumber&quot;</code> is <code>12</code> or <code>13</code>.</li>
 <li><code>fromBlock</code> - <code>Number</code> (optional): The block number from which to get events on.</li>
 <li><code>toBlock</code> - <code>Number</code> (optional): The block number to get events up to (Defaults to <code>&quot;latest&quot;</code>)</li>
-<li><code>topics</code> - <code>Array</code> (optional): This allows you to manually set the topics for the event filter. If given the filter property and event signature, (<code>topic[0]</code>) will not be set automatically.</li>
+<li><code>topics</code> - <code>Array</code> (optional): This allows you to manually set the topics for the event filter. If given the filter property and event signature, (<code>topic[0]</code>) will not be set automatically.\</li>
+<li><code>saveToDb</code> - <code>Boolean</code> (optional): Store events into a local database for faster data retrievals.  (default: <code>true</code>)</li>
 </ul>
 </li>
 </ol>
